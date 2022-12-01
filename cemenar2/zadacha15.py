@@ -1,7 +1,8 @@
-from math import factorial
+N = int(input('Введите число '))
 
-
-n = int(input('Введите число: '))
-f = lambda x: ((x == 1) and 1) or x * factoral(x -1)
-list2 = list( f(i) for i in range(1, n +1))
-print(list2)
+f = 1
+for i in range (N):
+    i = i + 1
+    f = i * f
+    
+    print (f, end=" ")
